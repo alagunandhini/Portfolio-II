@@ -7,4 +7,7 @@ export default defineConfig({
   plugins: [react(),
         tailwindcss(),
   ],
+   optimizeDeps: {
+    include: ['lucide-react'], // ensures lucide-react works on Vercel
+  },
 })
