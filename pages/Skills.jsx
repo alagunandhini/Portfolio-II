@@ -35,7 +35,7 @@ const Skills = () => {
       </div>
 
       {/* Skills Grid */}
-      <div className="relative z-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 px-6 sm:pb-0 pb-6">
+      <div className="relative z-10 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 px-6 sm:pb-0 pb-6">
         {skillList.map((skill, index) => (
           <div
             key={index}

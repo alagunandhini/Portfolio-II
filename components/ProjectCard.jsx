@@ -1,9 +1,15 @@
+import { useState } from "react";
+
 export default function ProjectCard({ project }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <div
-      className="group relative rounded-3xl bg-white border border-gray-200
+      onClick={() => setOpen(!open)}
+      className={`group relative rounded-3xl bg-white border border-gray-200
                  shadow-md hover:shadow-lg transition-all duration-300
-                 overflow-hidden hover:-translate-y-2"
+                 overflow-hidden hover:-translate-y-2
+                 cursor-pointer md:cursor-default`}
     >
       {/* Image */}
       <div className="p-4">
@@ -11,30 +17,51 @@ export default function ProjectCard({ project }) {
           <img
             src={project.image}
             alt={project.title}
-            className="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-48 w-full object-fit transition-transform duration-500
+                       group-hover:scale-105"
           />
         </div>
       </div>
 
       {/* Content */}
-      <div className="relative px-5 pb-5 text-center space-y-2 transition-opacity duration-500 group-hover:opacity-0">
-        <h3 className="text-base font-semibold text-gray-900">{project.title}</h3>
+      <div
+        className={`relative px-5 pb-5 text-center space-y-2 transition-opacity duration-500
+          ${open ? "opacity-0 md:opacity-100 md:group-hover:opacity-0" : "group-hover:opacity-0"}
+        `}
+      >
+        <h3 className="text-base font-semibold text-gray-900">
+          {project.title}
+        </h3>
         <p className="text-sm text-gray-500 leading-relaxed line-clamp-2">
           {project.description}
         </p>
       </div>
 
       {/* Hover Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+      <div
+        className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent
+          transition-all duration-500
+          ${open ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+        `}
+      />
 
       {/* Hover Content */}
-      <div className="absolute inset-0 flex flex-col justify-end p-6 translate-y-10 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-150">
+      <div
+        className={`absolute inset-0 flex flex-col justify-end p-6 transition-all duration-500 delay-150
+          ${
+            open
+              ? "translate-y-0 opacity-100"
+              : "translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
+          }
+        `}
+        onClick={(e) => e.stopPropagation()} // allow button click
+      >
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tech.map((t, i) => (
             <span
               key={i}
-              className="text-xs px-3 py-1 rounded-full bg- text-white border border-sky-200/40"
+              className="text-xs px-3 py-1 rounded-full text-white border border-sky-200/40"
             >
               {t}
             </span>
@@ -46,7 +73,8 @@ export default function ProjectCard({ project }) {
           <a
             href={project.github}
             target="_blank"
-            className="px-5 py-2 text-sm rounded-full border border-white/30 text-white hover:bg-white hover:text-black transition"
+            className="px-5 py-2 text-sm rounded-full border border-white/30
+                       text-white hover:bg-white hover:text-black transition"
           >
             GitHub
           </a>
@@ -54,7 +82,8 @@ export default function ProjectCard({ project }) {
           <a
             href={project.live}
             target="_blank"
-            className="px-5 py-2 text-sm rounded-full bg-blue-500 text-white hover:bg-blue-600 transition"
+            className="px-5 py-2 text-sm rounded-full bg-blue-500
+                       text-white hover:bg-blue-600 transition"
           >
             Live Demo
           </a>
@@ -63,6 +92,7 @@ export default function ProjectCard({ project }) {
     </div>
   );
 }
+
 
 
 // export default function ProjectCard({ project }) {

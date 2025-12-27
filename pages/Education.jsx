@@ -63,9 +63,9 @@ export default function Education() {
                 ></span>
 
                 {/* Card */}
-                <div className="bg-white p-7 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 relative">
+                <div className="bg-white p-10 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 relative">
                   {/* Score in corner */}
-                  <span className="absolute bottom-4 right-4 text-sm font-semibold text-slate-600">
+                  <span className="absolute bottom-2 right-4 text-sm font-semibold text-slate-600 ">
                     {item.score}
                   </span>
 

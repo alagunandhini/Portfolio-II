@@ -45,7 +45,7 @@ const contentRef = useRef(null);
         <>
         
         
-              <section  ref={heroRef} className=" hero min-h-[100vh] relative bg-slate-50 overflow-hidden  p-0" id="home">
+              <section  ref={heroRef} className=" hero min-h-[100vh] relative bg-slate-50 overflow-hidden  p-4 sm:p-8" id="home">
                        <div className="absolute top-20 left-20 w-72 h-72 bg-sky-200/60 rounded-full blur-[140px]" />
       <div className="absolute bottom-20 right-20 w-72 h-72 bg-blue-200/60 rounded-full blur-[140px]" />
                 <Navbar/>
@@ -59,16 +59,16 @@ const contentRef = useRef(null);
                       {/* Profile Image Section */}
               <div 
                 ref={imageRef}
-                className="flex justify-center lg:justify-start opacity-0 transform translate-y-8 transition-all duration-1000 relative lg:mx-0 mt-0"
+                className="flex justify-center lg:justify-start opacity-0 transform translate-y-8 transition-all duration-1000 relative lg:mx-0 mt-0 "
               >
                 <div className="relative group profile-container">
               
                   {/* Main Profile Container */}
-                  <div className="relative bg-gradient-to-br from-sky-300/60 to-blue-400/50 backdrop-blur-sm p-8 rounded-full border-2 border-sky-200/60 shadow-2xl group-hover:shadow-sky-300/50 transition-all duration-500 profile-frame mx-0 md:mx-0 lg:mx-30">
+                  <div className="relative bg-gradient-to-br from-sky-300/60 to-blue-400/50 backdrop-blur-sm p-8 rounded-full border-2 border-sky-200/60 shadow-2xl group-hover:shadow-sky-300/50 transition-all duration-500 profile-frame mx-0 md:mx-0 lg:mx-30 ">
                     <img 
                       src="me1.jpg"
                       alt="Alagu Nandhini"
-                      className="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover shadow-2xl  transition-all duration-700 scale-110 group-hover:rotate-3 profile-image"
+                      className=" w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover shadow-2xl  transition-all duration-700 scale-110 group-hover:rotate-3 profile-image"
                     />
                     
                     {/* Overlay Effect */}
@@ -99,7 +99,7 @@ const contentRef = useRef(null);
                     <p className="text-blue-400 text-lg font-medium tracking-wide uppercase">
                       Full Stack Developer
                     </p>
-                    <h1 className="text-5xl md:text-6xl lg:text-5xl font-extrabold text-gray-600 leading-tight">
+                    <h1 className="text-4xl md:text-6xl lg:text-5xl font-extrabold text-gray-600 leading-tight">
                       <span className="text-xl text-gray-600">
                         Hi,
                       </span>

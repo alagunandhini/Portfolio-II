@@ -126,8 +126,8 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative bg-slate-50  py-4 px-6 min-h-screen">
-       <div className="absolute top-20 left-20 w-72 h-72 bg-sky-200/60 rounded-full blur-[140px]" />
-      <div className="absolute bottom-20 right-20 w-72 h-72 bg-blue-200/60 rounded-full blur-[140px]" />
+       <div className="pointer-events-none absolute top-20 left-20 w-72 h-72 bg-sky-200/60 rounded-full blur-[140px]" />
+      <div className="pointer-events-none absolute bottom-20 right-20 w-72 h-72 bg-blue-200/60 rounded-full blur-[140px]" />
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">

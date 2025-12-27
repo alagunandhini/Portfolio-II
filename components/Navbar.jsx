@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return ( 
     <>
-      <nav className="bg-sky-50 text-gray-500 mx-10 shadow-sm shadow-sky-300 py-2  top-0 z-50  rounded-full mt-5 mb-4 ">
+      <nav className="bg-sky-50 text-gray-500  mx-0 sm:mx-10 shadow-sm shadow-sky-300 py-2  top-0 z-50  rounded-full mt-3 mb-4 ">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
