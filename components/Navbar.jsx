@@ -65,9 +65,13 @@ export default function Navbar() {
         </div>
 
         <div className="p-5 flex flex-col gap-4">
-          <Link to="/" onClick={() => setMenuOpen(false)} className="hover:text-gray-300 border-b border-pink-300 pb-2">Home</Link>
-          <Link to="/about" onClick={() => setMenuOpen(false)} className="hover:text-gray-300 border-b border-pink-300 pb-2">About</Link>
-          <Link to="/skills" onClick={() => setMenuOpen(false)} className="hover:text-gray-300 border-b border-pink-300 pb-2">Skills</Link>
+           <button onClick={()=>ScrollToSection("home")} className="hover:text-gray-300 border-b border-sky-300" >Home</button>
+           <button onClick={()=>ScrollToSection("skills")} className="hover:text-gray-300 border-b border-sky-300" >Skills</button>
+            <button onClick={()=>ScrollToSection("projects")} className="hover:text-gray-300 border-b border-sky-300" >Projects</button>
+             <button onClick={()=>ScrollToSection("certificates")} className="hover:text-gray-300 border-b border-sky-300" >Certificates</button>
+              <button onClick={()=>ScrollToSection("education")} className="hover:text-gray-300 border-b border-sky-300" >Education</button>
+               <button onClick={()=>ScrollToSection("contact")} className="hover:text-gray-300 border-b border-sky-300" >Contact</button>
+                
           <div className='flex gap-5'>
          
           </div>

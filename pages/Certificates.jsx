@@ -37,15 +37,15 @@ const Certificates = () => {
           <div className="flex gap-3">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className="w-10 h-10 rounded-full bg-sky-600 border border-sky-300 
-                         hover:bg-gray-100 transition"
+              className="w-10 h-10 rounded-full bg-sky-500 border border-sky-300 
+                         hover:bg-gray-100 hover:text-gray-700 transition"
             >
               ←
             </button>
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className="w-10 h-10 rounded-full bg-sky-600 border border-sky-300 
-                         hover:bg-gray-100 transition"
+              className="w-10 h-10 rounded-full bg-sky-500 border border-sky-300 
+                         hover:bg-gray-100 hover:text-gray-700 transition"
             >
               →
             </button>

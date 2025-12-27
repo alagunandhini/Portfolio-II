@@ -20,7 +20,7 @@ export default function Contact() {
           <img
             src="dev1.png"
             alt="Contact"
-            className="w-full h-full object-cover "
+            className="w-full h-full object-cover rounded-xl "
           />
           <p className="text-slate-500 text-sm mt-2">Let's Build and Connect !</p>
         </div>

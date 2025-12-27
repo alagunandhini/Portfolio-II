@@ -4,11 +4,12 @@ export default function Education() {
   const educationData = [
     {
       id: 1,
-      institution: "Mount Zion College of Engineering",
+      institution: "Mount Zion College of Engineering and Technology",
       degree: "Bachelor of Engineering",
       duration: "2023 — 2027",
       status: "Pursuing",
       dot: "bg-sky-500",
+      score: "CGPA: 8.2", // Added CGPA
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ export default function Education() {
       duration: "2021 — 2023",
       status: "Completed",
       dot: "bg-slate-400",
+      score: "Percentage: 85%", // Added Percentage
     },
   ];
 
@@ -61,7 +63,12 @@ export default function Education() {
                 ></span>
 
                 {/* Card */}
-                <div className="bg-white p-7 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300">
+                <div className="bg-white p-7 rounded-3xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 relative">
+                  {/* Score in corner */}
+                  <span className="absolute bottom-4 right-4 text-sm font-semibold text-slate-600">
+                    {item.score}
+                  </span>
+
                   <span className="text-xs text-slate-400 font-medium">
                     {item.duration}
                   </span>

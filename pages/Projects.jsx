@@ -44,8 +44,8 @@ const projectsData = {
     },
 
       {
-      title: "User Management",
-      description: "Simple calculator with clean and minimal UI.",
+      title: "User Management (CRUD)",
+      description: "A web app to add, view, edit, and delete users easily.",
       tech: ["React", "Tailwind CSS", "Express Js","Postgre Sql"],
       github: "https://github.com/alagunandhini/UserManagement",
       live: "https://user-management1-one.vercel.app/",
@@ -53,18 +53,18 @@ const projectsData = {
     },
      {
       title: "InnoVerse - Modern Ui",
-      description: "Drag & Drop Heart Love Quote Generator for fun ",
+      description: " A modern web interface to explore human innovation. ",
       tech: ["React", "Tailwind CSS"],
-      github: "https://github.com/alagunandhini/valentine-s-special",
+      github: "https://github.com/alagunandhini/InnoVerse",
       live: "https://innoverse-alna.netlify.app/",
       image: "inno.png",
     },
 
      {
       title: "Photo Gallery",
-      description: "Drag & Drop Heart Love Quote Generator for fun ",
+      description: "A clean and interactive  photo gallery to showcase images",
       tech: ["React", "Tailwind CSS"],
-      github: "https://github.com/alagunandhini/valentine-s-special",
+      github: "https://github.com/alagunandhini/GalleryReact",
       live: "#",
       image: "gal.png",
     },
@@ -87,18 +87,18 @@ const projectsData = {
     },
       {
       title: "Todo List",
-      description: "Drag & Drop Heart Love Quote Generator for fun ",
+      description: "A simple web app to add, edit, and delete tasks. ",
       tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/alagunandhini/valentine-s-special",
+      github: "#",
       live: "#",
       image: "todo.png",
     },
 
      {
       title: "Login & Signup",
-      description: "Drag & Drop Heart Love Quote Generator for fun ",
+      description: "A simple web to create accounts and sign in securely. ",
       tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/alagunandhini/valentine-s-special",
+      github: "https://github.com/alagunandhini/login-page",
       live: "#",
       image: "login.png",
     },
@@ -113,9 +113,9 @@ const projectsData = {
     {
       title: "CVortex - Resume Tools",
       description: " 𝗖𝗩𝗼𝗿𝘁𝗲𝘅 – an AI-powered Resume Analyzer & Resume Builder! ",
-      tech: ["React", "Tailwind CSS", "Express js", "MongoDB","Groq AI"],
-      github: "#",
-      live: "#",
+      tech: ["React", "Tailwind CSS", "Express js", "MongoDB","llama AI"],
+      github: "https://github.com/Madhesh-GitHub/CVortex",
+      live: "https://thecvortex.vercel.app/",
       image: "Team.png",
     },
   ],
@@ -152,7 +152,7 @@ export default function Projects() {
             <button
               key={item.key}
               onClick={() => setActive(item.key)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition
+              className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer
                 ${
                   active === item.key
                     ? "bg-sky-500 text-white shadow-md"

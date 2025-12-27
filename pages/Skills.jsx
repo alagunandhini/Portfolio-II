@@ -21,7 +21,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="relative min-h-screen w-full flex flex-col items-center justify-center bg-slate-50 overflow-hidden p-0">
+    <section id="skills" className="relative min-h-screen w-full flex flex-col items-center justify-center bg-slate-50 overflow-hidden p-0 ">
       
       {/* Background Soft Blurs */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-sky-200 rounded-full blur-[140px]"></div>
@@ -35,7 +35,7 @@ const Skills = () => {
       </div>
 
       {/* Skills Grid */}
-      <div className="relative z-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 px-6">
+      <div className="relative z-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 px-6 sm:pb-0 pb-6">
         {skillList.map((skill, index) => (
           <div
             key={index}

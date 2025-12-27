@@ -64,7 +64,7 @@ const contentRef = useRef(null);
                 <div className="relative group profile-container">
               
                   {/* Main Profile Container */}
-                  <div className="relative bg-gradient-to-br from-sky-300/60 to-blue-400/50 backdrop-blur-sm p-8 rounded-full border-2 border-sky-200/60 shadow-2xl group-hover:shadow-sky-300/50 transition-all duration-500 profile-frame mx-0 lg:mx-40">
+                  <div className="relative bg-gradient-to-br from-sky-300/60 to-blue-400/50 backdrop-blur-sm p-8 rounded-full border-2 border-sky-200/60 shadow-2xl group-hover:shadow-sky-300/50 transition-all duration-500 profile-frame mx-0 md:mx-0 lg:mx-30">
                     <img 
                       src="me1.jpg"
                       alt="Alagu Nandhini"
@@ -118,18 +118,43 @@ const contentRef = useRef(null);
                   </div>
                       
                   {/* Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-8">
-                    <button className="group relative inline-flex items-center justify-center px-8 py-4 text-white font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 bg-blue-400 hover:bg-blue-500 shadow-lg hover:shadow-xl">
-                      <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      <Download className="relative mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                      <span className="relative">Resume</span>
-                    </button>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-8 mb-10 sm:mb-0">
+                   <a
+  href="/Alagu_Nandhini_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full sm:w-auto"
+>
+  <button className="group relative inline-flex items-center justify-center 
+    px-6 sm:px-8 py-3 sm:py-4 
+    text-white font-semibold rounded-full 
+    overflow-hidden transition-all duration-300 
+    hover:scale-105 bg-blue-400 hover:bg-blue-500 
+    shadow-lg hover:shadow-xl w-full sm:w-auto">
+    
+    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent 
+      opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    
+    <Download className="relative mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+    <span className="relative">Resume</span>
+  </button>
+</a>
 
-                    <button className="group relative inline-flex items-center justify-center px-8 py-4 text-white font-semibold rounded-full border-2 border-sky-300 overflow-hidden transition-all duration-300 hover:scale-105 bg-sky-300 hover:bg-sky-400 shadow-lg hover:shadow-xl">
+
+                    <a href="https://github.com/alagunandhini" target="_blank" className="w-full sm:w-auto">
+
+                    <button className="group relative inline-flex items-center justify-center 
+    px-6 sm:px-8 py-3 sm:py-4 
+    text-white font-semibold rounded-full 
+    overflow-hidden transition-all duration-300 
+    hover:scale-105 bg-sky-300 hover:bg-sky-400 
+    shadow-lg hover:shadow-xl w-full sm:w-auto">
                       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <Github className="relative mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                       <span className="relative">Github</span>
                     </button>
+                    </a>
+                
                   </div>
                     </div>
 
